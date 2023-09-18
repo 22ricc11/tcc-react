@@ -1,0 +1,55 @@
+.LandingPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+
+    .cabecalho{
+        width: 100%;
+        background-color: #181B1A;
+        height: 85.2vh
+    }
+
+    .cabecalho img{
+        margin-top: 30px;
+        width: 23vw;
+        height: 45vh;
+    }
+
+    .cabecalho a{
+        text-decoration: none;
+        color: #A2D65D;
+    }
+
+    .imagem-de-canto{
+        display: flex;
+        justify-content: flex-end;  
+    }
+
+    .imagem-de-canto img{
+        width: 40vw;
+        height: auto;
+    }
+
+    .bambu{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .bambu img{
+        width: 100%;
+        height: 35vh;    
+    }
+    
+    .n-sei{
+        display: flex;
+        flex-direction: row;
+        background-color: #BAD68D;
+        width: 100vw;
+        height: 30vh;
+    }
+
+    .n-sei h1{
+        width: 400px;
+    }
+}
