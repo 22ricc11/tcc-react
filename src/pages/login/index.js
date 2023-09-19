@@ -26,12 +26,12 @@ export default function Login(){
                 <h4>Entrar com:</h4>
 
                 <div className='app'>
-                    <img src='/assets/images/insta.png' alt=''/>
-                    <img src='/assets/images/facebook.png' alt=''/>
-                    <img src='/assets/images/google.png' alt=''/>
+                    <a href='https://www.instagram.com/'><img src='/assets/images/insta.png' alt=''/></a>
+                    <a href='https://www.facebook.com/'><img src='/assets/images/facebook.png' alt=''/></a>
+                    <a href='https://www.google.com/'><img src='/assets/images/google.png' alt=''/></a>
                 </div>
 
-                <button>cadastro</button>
+                <button>confirmar</button>
 
             </div>
         </div>
