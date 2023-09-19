@@ -1,13 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './index.scss';
 
 import 'react-router-dom';
 
+
+//rota
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
+//pages
 import HomePage from './pages/home';
 import PrivacyPolicy from './components/Politica_de_Privacidade';
-import footer from './components/rodapé';
+import Footer from './components/rodapé';
+import Login from './pages/login/index';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -17,7 +22,8 @@ root.render(
            <Routes>
                <Route path='/'  exact={true} element={<HomePage/>}/>
                <Route path='/PrivacyPolicy' element={<PrivacyPolicy/>} />
-               <Route path='/footer' element={<footer/>} />
+               <Route path='/footer' element={<Footer/>} />
+               <Route path='/login' element={<Login/>} />
            </Routes>
      </BrowserRouter>
   </React.StrictMode>
