@@ -1,8 +1,6 @@
 import './index.scss';
 
-
-export default function Login(){
-
+export default function Cadastro(){
     return(
         <div className='Box-principal'>
             <div className='ima'>
@@ -12,25 +10,21 @@ export default function Login(){
             <div className='coisas'>
                 
             <div className='bt'>
-                <button>cadastro</button>
+                <button>login</button>
             </div>
 
-                <h1>Login</h1>
+                <h1>Criar Conta</h1>
 
                 <div>
                     <input type='text' />
                     <input type='text' />
+                    <input type='text' />
+                    <input type='text' />
                 </div>
 
-                <h4>Entrar com:</h4>
+                
 
-                <div className='app'>
-                    <img src='/assets/images/insta.png' alt=''/>
-                    <img src='/assets/images/facebook.png' alt=''/>
-                    <img src='/assets/images/google.png' alt=''/>
-                </div>
-
-                <button>cadastro</button>
+                <button>Confirmar</button>
 
             </div>
         </div>
