@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './index.scss';
 
 
@@ -12,7 +13,7 @@ export default function Login(){
             <div className='coisas'>
                 
             <div className='bt'>
-                <button>cadastro</button>
+                <Link to='/cadastro'>cadastro</Link>
             </div>
 
                 <h1>Login</h1>

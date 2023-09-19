@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './index.scss';
 
 export default function Cadastro(){
@@ -10,7 +11,7 @@ export default function Cadastro(){
             <div className='coisas'>
                 
             <div className='bt'>
-                <button>login</button>
+                <Link to='/login'>Login</Link>
             </div>
 
                 <h1>Criar conta</h1>
@@ -21,8 +22,6 @@ export default function Cadastro(){
                     <input type='text' />
                     <input type='text' />
                 </div>
-
-                
 
                 <button>Confirmar</button>
 
