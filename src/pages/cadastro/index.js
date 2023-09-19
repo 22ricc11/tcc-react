@@ -13,7 +13,7 @@ export default function Cadastro(){
                 <button>login</button>
             </div>
 
-                <h1>Criar Conta</h1>
+                <h1>Criar conta</h1>
 
                 <div>
                     <input type='text' />
