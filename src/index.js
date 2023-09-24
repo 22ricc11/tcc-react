@@ -11,7 +11,8 @@ import PrivacyPolicy from './components/Politica_de_Privacidade';
 import Footer from './components/rodapé';
 import Login from './pages/login/index.js';
 import Cadastro from './pages/cadastro/index.js';
-
+import Adm from './pages/adm/entrar/index.js';
+import Princ from './pages/adm/princ/index.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -23,6 +24,8 @@ root.render(
       <Route path='/footer' element={<Footer/>} />
       <Route path='/login' element={<Login/>} /> 
       <Route path='/cadastro' element={<Cadastro/>} /> 
+      <Route path='/adm' element={<Adm/>} /> 
+      <Route path='/princ' element={<Princ/>} /> 
     </Routes>
     </BrowserRouter>
   </React.StrictMode>
