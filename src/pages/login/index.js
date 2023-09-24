@@ -24,6 +24,8 @@ export default function Login(){
 
                 <div>
                     <input type="text" value={email} placeholder='E-mail' onChange={e=> setEmail(e.target.value)} />
+                </div>
+                <div>
                     <input type='text' value={senha} placeholder='Senha' onChange={e=> setSenha(e.target.value)} />
                 </div>
 

@@ -15,7 +15,7 @@ export default function Cadastro(){
                 <img src='/assets/images/login.png' alt=''/>
             </div>
             
-            <div className='coisas'>
+            <div className='informacoes'>
                 
             <div className='bt'>
                 <Link to='/login'>Login</Link>
