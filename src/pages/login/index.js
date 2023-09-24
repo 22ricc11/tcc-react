@@ -1,8 +1,12 @@
 import { Link } from 'react-router-dom';
 import './index.scss';
+import { useState } from 'react';
 
 
 export default function Login(){
+
+    const[email, setEmail] = useState();
+    const[senha, setSenha] = useState();
 
     return(
         <div className='Box-principal'>
@@ -19,8 +23,8 @@ export default function Login(){
                 <h1>Login</h1>
 
                 <div>
-                    <input type='text' />
-                    <input type='text' />
+                    <input type="text" value={email} placeholder='E-mail' onChange={e=> setEmail(e.target.value)} />
+                    <input type='text' value={senha} placeholder='Senha' onChange={e=> setSenha(e.target.value)} />
                 </div>
 
                 <h4>Entrar com:</h4>
@@ -31,7 +35,7 @@ export default function Login(){
                     <a href='https://www.google.com/'><img src='/assets/images/google.png' alt=''/></a>
                 </div>
 
-                <button>confirmar</button>
+                <a href='/'><button>confirmar</button></a>
 
             </div>
         </div>

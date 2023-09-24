@@ -1,7 +1,14 @@
 import { Link } from 'react-router-dom';
 import './index.scss';
+import { useState } from 'react';
 
 export default function Cadastro(){
+
+    const[nome, setNome] = useState();
+    const[email, setEmail] = useState();
+    const[senha, setSenha] = useState();
+    const[confSenha, setConfSenha] = useState();
+
     return(
         <div className='Box-principal'>
             <div className='ima'>
@@ -17,13 +24,13 @@ export default function Cadastro(){
                 <h1>Criar conta</h1>
 
                 <div>
-                    <input type='text' />
-                    <input type='text' />
-                    <input type='text' />
-                    <input type='text' />
+                <input type="text" value={nome} placeholder='Nome' onChange={e=> setNome(e.target.value)} />
+                <input type="text" value={email} placeholder='E-mail' onChange={e=> setEmail(e.target.value)} />
+                <input type="text" value={senha} placeholder='Senha' onChange={e=> setSenha(e.target.value)} />
+                <input type="text" value={confSenha} placeholder='Confirmar Senha' onChange={e=> setConfSenha(e.target.value)} />
                 </div>
 
-                <button>Confirmar</button>
+                <a href='/'><button>Confirmar</button></a>
 
             </div>
         </div>
