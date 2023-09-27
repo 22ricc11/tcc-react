@@ -12,7 +12,7 @@ export default function Principal(){
                 <div className='cadProduto'>
                     <div className='img'>
                         <img src='/assets/images/blocos.png' alt=''/>
-                        <Link to=''>Cadastrar Produto</Link>
+                        <Link to='/cadProd'>Cadastrar Produto</Link>
                     </div>
                 </div>
 

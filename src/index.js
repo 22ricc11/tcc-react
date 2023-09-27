@@ -13,6 +13,7 @@ import Login from './pages/login/index.js';
 import Cadastro from './pages/cadastro/index.js';
 import Adm from './pages/adm/entrar/index.js';
 import Princ from './pages/adm/princ/index.js';
+import CadProd from './pages/adm/cadProd/index.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -26,6 +27,7 @@ root.render(
       <Route path='/cadastro' element={<Cadastro/>} /> 
       <Route path='/adm' element={<Adm/>} /> 
       <Route path='/princ' element={<Princ/>} /> 
+      <Route path='/cadProd' element={<CadProd />} />
     </Routes>
     </BrowserRouter>
   </React.StrictMode>
