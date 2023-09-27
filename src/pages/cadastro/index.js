@@ -10,11 +10,7 @@ export default function Cadastro(){
     const[confSenha, setConfSenha] = useState();
 
     return(
-        <div className='Box-principal'>
-            <div className='ima'>
-                <img src='/assets/images/login.png' alt=''/>
-            </div>
-            
+        <div className='Box-principal'> 
             <div className='informacoes'>
                 
             <div className='bt'>
@@ -31,7 +27,10 @@ export default function Cadastro(){
                 </div>
 
                 <a href='/'><button>Confirmar</button></a>
-
+            </div>
+            
+            <div className='ima'>
+                <img src='/assets/images/login.png' alt=''/>
             </div>
         </div>
     )

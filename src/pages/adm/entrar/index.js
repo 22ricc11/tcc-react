@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import './index.scss';
 import { useState } from 'react';
 
@@ -24,7 +23,7 @@ export default function Login(){
                     <input type='text' value={senha} placeholder='Senha' onChange={e=> setSenha(e.target.value)} />
                 </div>
 
-                <Link><button>Entrar</button></Link>
+                <a href='/princ'><button>Entrar</button></a>
 
             </div>
         </div>
