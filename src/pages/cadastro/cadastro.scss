@@ -1,6 +1,6 @@
 .principal{
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: center;
     padding: 15px;
     background-color: #181B19;
@@ -9,7 +9,10 @@
 .bt a{
     color: #9AB165;
     text-decoration: none;
-    
+}
+
+.bt{
+    margin-right: 30px;
 }
 
 .coisas{
@@ -19,7 +22,7 @@
     align-items: center;
 }
 
-.Login{
+.cc{
     display: flex;
     justify-content: center;
     text-align: center;
