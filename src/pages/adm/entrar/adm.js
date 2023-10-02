@@ -25,7 +25,7 @@ export default function Login(){
                     <input type='text' value={senha} placeholder='Senha' onChange={e=> setSenha(e.target.value)} />
                 </div>
                 
-                <a href='/princ'><button>Entrar</button></a>
+                <a href='/principalAdm'><button>Entrar</button></a>
 
             </div>
         </div>

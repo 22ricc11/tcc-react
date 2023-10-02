@@ -1,49 +1,4 @@
-.principal{
-    background-color: #181B19;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    
-}
 
-    .cabecalho{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 8vh;
-        background-color: #35492D;
-    }
-
-    .opcoes{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-items: center;
-        
-    }
-
-    .opcoes div{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        background-color: #ffff;
-        margin: 10px;
-        width: 15vw;
-        height: 15vh;
-    }
-
-    .opcoes div img{
-        padding: 5px;
-        margin-left: 60px;
-        width: 70px;
-        height: 70px;
-    }
-
-    .opcoes p{
-        color: #181B19;
-    }
 
    
 

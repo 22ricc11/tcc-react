@@ -12,6 +12,7 @@ import Footer from './components/rodapé';
 import Login from './pages/login/login.js';
 import Cadastro from './pages/cadastro/cadastro.js';
 import Adm from './pages/adm/entrar/adm.js';
+import PrincipalAdm from './pages/adm/princ/princ.js'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -25,6 +26,7 @@ root.render(
       <Route path='/login' element={<Login/>} /> 
       <Route path='/cadastro' element={<Cadastro/>} /> 
       <Route path='/adm' element={<Adm/>} />
+      <Route path='/principalAdm' element={<PrincipalAdm/>} />
     </Routes>
     </BrowserRouter>
   </React.StrictMode>
