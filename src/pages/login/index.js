@@ -5,8 +5,8 @@ import { useState } from 'react';
 
 export default function Login(){
 
-    const[email, setEmail] = useState();
-    const[senha, setSenha] = useState();
+    const[emailL, setEmailL] = useState();
+    const[senhaL, setSenhaL] = useState();
 
     return(
         <div className='Box-principal'>
@@ -23,10 +23,10 @@ export default function Login(){
                 <h1>Login</h1>
 
                 <div>
-                    <input type="text" value={email} placeholder='E-mail' onChange={e=> setEmail(e.target.value)} />
+                    <input type="text" value={emailL} placeholder='E-mail' onChange={e=> setEmailL(e.target.value)} />
                 </div>
                 <div>
-                    <input type='text' value={senha} placeholder='Senha' onChange={e=> setSenha(e.target.value)} />
+                    <input type='text' value={senhaL} placeholder='Senha' onChange={e=> setSenhaL(e.target.value)} />
                 </div>
 
                 <h4>Entrar com:</h4>

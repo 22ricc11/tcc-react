@@ -1,5 +1,5 @@
+import './index.scss'
 import { Link } from 'react-router-dom';
-import './index.scss';
 import { useState } from 'react';
 
 export default function Cadastro(){
@@ -10,9 +10,9 @@ export default function Cadastro(){
     const[confSenha, setConfSenha] = useState();
 
     return(
-        <div className='principal'> 
-        <div className='ima'>
-                <img src='/assets/images/login.png' alt=''/>
+        <div className='principal'>
+            <div className='ima'>
+                    <img src='/assets/images/login.png' alt=''/>
             </div>
             
             <div className='informacoes'>
