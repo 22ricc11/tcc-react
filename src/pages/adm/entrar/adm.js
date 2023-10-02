@@ -1,4 +1,4 @@
-import './index.scss';
+import './adm.scss';
 import { useState } from 'react';
 
 export default function Login(){
@@ -7,22 +7,24 @@ export default function Login(){
     const[senha, setSenha] = useState();
 
     return(
-        <div className='Box-principal'>
+        <div className='box'>
             <div className='ima'>
                 <img src='/assets/images/login.png' alt=''/>
             </div>
             
             <div className='coisas'>
 
-                <h1>Login Admin</h1>
+                <div className='admin'>
+                    <h1>Login Admin</h1>
+                </div>
+                
+
 
                 <div>
                     <input type="text" value={email} placeholder='E-mail' onChange={e=> setEmail(e.target.value)} />
-                </div>
-                <div>
                     <input type='text' value={senha} placeholder='Senha' onChange={e=> setSenha(e.target.value)} />
                 </div>
-
+                
                 <a href='/princ'><button>Entrar</button></a>
 
             </div>
