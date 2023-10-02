@@ -9,10 +9,10 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Homepage from './pages/home';
 import PrivacyPolicy from './components/Politica_de_Privacidade';
 import Footer from './components/rodapé';
-import Login from './pages/login/index.js';
-import Cadastro from './pages/cadastro/index.js';
-import Adm from './pages/adm/entrar/index.js';
-import Princ from './pages/adm/princ/index.js';
+import Login from './pages/login/login.js';
+import Cadastro from './pages/cadastro/cadastro.js';
+import Adm from './pages/adm/entrar/adm.js';
+import Princ from './pages/adm/princ/princ';
 import CadProd from './pages/adm/cadProd/index.js';
 import Grafico from './pages/adm/grafico/index.js';
 

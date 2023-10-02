@@ -1,5 +1,5 @@
+import './login.scss';
 import { Link } from 'react-router-dom';
-import './index.scss';
 import { useState } from 'react';
 
 
@@ -28,7 +28,7 @@ export default function Login(){
                 <div>
                     <input type='text' value={senhaL} placeholder='Senha' onChange={e=> setSenhaL(e.target.value)} />
                 </div>
-
+                
                 <h4>Entrar com:</h4>
 
                 <div className='apps'>
@@ -38,7 +38,6 @@ export default function Login(){
                 </div>
 
                 <a href='/'><button>confirmar</button></a>
-
             </div>
         </div>
     )
