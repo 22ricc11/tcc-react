@@ -14,11 +14,11 @@ export default function Login(){
                 <img src='/assets/images/login.png' alt=''/>
             </div>
             
-            <div className='coisas'>
-                
             <div className='bt'>
-                <Link to='/cadastro'>cadastro</Link>
+                <Link to='/cadastro'>Cadastro</Link>
             </div>
+
+            <div className='coisas'>
 
                 <h1>Login</h1>
 
@@ -31,7 +31,7 @@ export default function Login(){
 
                 <h4>Entrar com:</h4>
 
-                <div className='app'>
+                <div className='apps'>
                     <a href='https://www.instagram.com/'><img src='/assets/images/instagram.png' alt=''/></a>
                     <a href='https://www.facebook.com/'><img src='/assets/images/facebook.png' alt=''/></a>
                     <a href='https://www.google.com/'><img src='/assets/images/google.png' alt=''/></a>
