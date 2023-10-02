@@ -20,7 +20,9 @@ export default function Login(){
 
             <div className='coisas'>
 
-                <h1>Login</h1>
+                <div className='Login'>
+                    <h1>Login</h1>
+                </div>
 
                 <div>
                     <input type="text" value={emailL} placeholder='E-mail' onChange={e=> setEmailL(e.target.value)} />
