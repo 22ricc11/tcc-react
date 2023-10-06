@@ -30,6 +30,8 @@ export default function Grafico(){
                     <h3>GRAFICO</h3>
                 </div>
             </div>
+
+            <p>*FALTA O GRAFICO*</p>
         </div>
     )
 }

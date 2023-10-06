@@ -12,7 +12,10 @@ import Footer from './components/rodapé';
 import Login from './pages/login/login.js';
 import Cadastro from './pages/cadastro/cadastro.js';
 import Adm from './pages/adm/entrar/adm.js';
-import PrincipalAdm from './pages/adm/princ/princ.js'
+import PrincipalAdm from './pages/adm/princ/princ.js';
+import CadProd from './pages/adm/cadProd/index.js';
+import Grafico from './pages/adm/grafico/index.js';
+import Pedido from './pages/adm/pedidos/pedido.js';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -27,6 +30,9 @@ root.render(
       <Route path='/cadastro' element={<Cadastro/>} /> 
       <Route path='/adm' element={<Adm/>} />
       <Route path='/principalAdm' element={<PrincipalAdm/>} />
+      <Route path='/cadProd' element={<CadProd/>} />
+      <Route path='/grafico' element={<Grafico/>} />
+      <Route path='/pedido' element={<Pedido/>} />
     </Routes>
     </BrowserRouter>
   </React.StrictMode>
