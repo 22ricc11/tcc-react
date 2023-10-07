@@ -32,10 +32,10 @@ export default function Cadastro(){
                     <input type='text' value={email} placeholder='E-mail' onChange={e=> setEmail(e.target.value)} />
                 </div>
                 <div>
-                    <input type="password" value={senha} placeholder='Senha' onChange={e=> setSenha(e.target.value)} />
+                    <input type="text" value={senha} placeholder='Senha' onChange={e=> setSenha(e.target.value)} />
                 </div>
                 <div>
-                    <input type='password' value={confS} placeholder='Confirmar senha' onChange={e=> setConfS(e.target.value)} />
+                    <input type='text' value={confS} placeholder='Confirmar senha' onChange={e=> setConfS(e.target.value)} />
                 </div>
                 
 

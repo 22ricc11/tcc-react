@@ -2,21 +2,47 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 15px;
-    background-color: #181B19;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to left, #1B2727, #3C5148, #6B8E4E, #b2c5b2, #D5DDDF);
+    background-size: 500% ;
+    animation: principal 3s infinite alternate;
 }
 
-.bt a{
-    color: #9AB165;
+@keyframes principal{
+    0%{
+        background-position-x: 0%;
+    }
+    100%{
+        background-position-x: 100%;
+    }
+}
+
+.ima img{
+    width: 37vw;
+    height: 75vh;
+}
+
+
+.S{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 70vw;
+    height: 75vh;
+    background-color: #181B19;
+    margin-top: 90px;
+}
+
+#BT{
+    color: #8AA252;
     text-decoration: none;
-    margin: 30%;
+    margin: 15px 0px 0px 10px;
 }
 
 .coisas{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .Login{
@@ -34,9 +60,13 @@
     padding: 4px;
     border-radius: 5px;
     border: none;
-    text-align: center;
     width: 25vw;
     background-color: #403E3E;
+}
+
+   
+.coisas button img{
+    width: 10px;
 }
 
 .coisas h4{
@@ -45,7 +75,7 @@
 }
 
 .apps a{
-    margin: 20px;
+    margin: 15px;
 }
 
 .coisas a button{
