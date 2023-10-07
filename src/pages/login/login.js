@@ -6,7 +6,6 @@ import { useState } from 'react';
 export default function Login(){
 
     const[emailL, setEmailL] = useState();
-
     const[senhaV, setsenhaV] = useState(false)
     const[senhaL, setSenhaL] = useState();
 
