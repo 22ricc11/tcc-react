@@ -28,7 +28,7 @@ export default function Login(){
                     <input type="text" value={emailL} placeholder='E-mail' onChange={e=> setEmailL(e.target.value)} />
                 </div>
                 <div>
-                    <input type='text' value={senhaL} placeholder='Senha' onChange={e=> setSenhaL(e.target.value)} />
+                    <input type='password' value={senhaL} placeholder='Senha' onChange={e=> setSenhaL(e.target.value)} />
                 </div>
                 
                 <h4>Entrar com:</h4>
