@@ -1,0 +1,62 @@
+.princ{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #181B19;
+    width: 100vw;
+    height: 100vh;
+    
+    
+    .cabecalho{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: #35492D;
+        width: 100vw;
+        height: 90px;
+
+
+        #logo{
+            position: fixed;
+
+            img{
+                width: 120px;
+            }
+        }
+
+        #user{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            position: relative;
+            left: 760px;
+            
+
+            p{
+                font-size: 20px;
+                margin: 10px;
+            }
+
+            img{
+                width: 50px;
+                height: 50px;
+                cursor: pointer;
+            }
+        }
+
+
+        .tudo{
+            margin-top: 90px;
+            display: flex;
+            flex-wrap: wrap;
+
+
+            div a{
+                text-align: center;
+                text-decoration: none;
+                color: #000;
+                font-size: 30px;
+            }
+        }
+    }
+}

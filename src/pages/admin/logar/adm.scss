@@ -1,4 +1,4 @@
-.box{
+.colorido{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -6,10 +6,20 @@
     width: 100vw;
     height: 100vh;
     background-color: #2f3531;
+    background-image: linear-gradient(to left, #1B2727, #3C5148, #6B8E4E, #b2c5b2, #D5DDDF);
+    background-size: 500% ;
+    animation: principal 3s infinite alternate;
 
+    @keyframes principal{
+        0%{
+            background-position-x: 0%;
+        }
+        100%{
+            background-position-x: 100%;
+        }
+    }
 
-
-    .principal{
+    .pretin{
         display: flex;
         flex-direction: row;
         width: 70vw;
@@ -17,18 +27,9 @@
         background-color: #181B19;
         border-radius: 10px;
 
-        #uma{
-            position: absolute;
-            width: 23px;
-            right: 1240px;
-            bottom: 630px;
 
-        }
-
-
-        #um{
+        #img{
             width: 35vw;
-            height: 80vh;
             border-radius: 10px;
         }
 
@@ -37,20 +38,9 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 0px 0px 90px 0px;
-
-            
-            #BT{
-                text-decoration: none;
-                color: #A2D65D;
-                margin: 15px 10px;
-                position: relative;
-                right: 220px;
-                
-            }
     
             
-            .Login{
+            .t{
                 margin-top: 60px;
             }
 
@@ -72,23 +62,6 @@
             button img{
                 width: 13px;
             }
-            
-            
-            h4{
-                padding: 30px;
-                font-size: 20px;
-                color: #90A955;
-            }
-
-            
-            .apps a {
-                margin: 10px;
-            }
-            
-            .apps a img:hover{
-                transform: scale(1.3);
-                transition: .5s;
-            }
 
             
             a button{
@@ -109,7 +82,5 @@
         }
     }
 }
-
-
 
 

@@ -1,56 +1,50 @@
-import './login.scss';
-import { Link } from 'react-router-dom';
 import { useState } from 'react';
-
+import { Link } from 'react-router-dom';
+import './login.scss';
 
 export default function Login(){
-
-    const[emailL, setEmailL] = useState();
-    const[senhaV, setsenhaV] = useState(false)
-    const[senhaL, setSenhaL] = useState();
+    const[email, setEmail] = useState('');
+    const[senha, setSenha] = useState('');
+    const[senhaV, setSenhaV] = useState(false);
 
     const toggleVisibilidadeSenha = () => {
-        setsenhaV(!senhaV);
+        setSenhaV(!senhaV);
     }
 
     return(
-        <div className='Box-principal'>
-            <div className='S'>
+        <div className='box'>
+            <div className='principal'>
+                <Link to='/'><img id='uma' src='/assets/images/seta-fundo-preto.png' alt=''/></Link>
+                <img id='um' src='/assets/images/login.png' alt=''/>
+                
 
-                <div className='ima'>
-                    <img src='/assets/images/login.png' alt=''/>
-                </div>
                 
-                
-                    <Link id='BT' to='/cadastro'>Cadastro</Link>
-                
+
                 <div className='coisas'>
+
+                    <Link id='BT' to='/cadastro'>Cadastro</Link>
+
                     <div className='Login'>
                         <h1>Login</h1>
                     </div>
  
-                        <div>
-                            <input type="text" value={emailL} placeholder='E-mail' onChange={e=> setEmailL(e.target.value)} />
-                        </div>
-                        <div>
-                            <input type={senhaV ? 'text' : 'password'} value={senhaL} placeholder='Senha' onChange={e=> setSenhaL(e.target.value)} />
+                        <div id='in'>
+                            <input type="text" value={email} placeholder='E-mail' onChange={e=> setEmail(e.target.value)} />
+                            <input type={senhaV ? 'text' : 'password'} value={senha} placeholder='Senha' onChange={e=> setSenha(e.target.value)} />
+                            <button onClick={toggleVisibilidadeSenha}> {senhaV ? <img src='/assets/images/olhoA.svg' alt=''/> : <img src='/assets/images/olhoF.svg' alt=''/> }</button>
                         </div>
                         
-                        <button onClick={toggleVisibilidadeSenha}> {senhaV ? <img src='/assets/images/olhoA.png' alt=''/> : <img src='/assets/images/olhoF.png' alt=''/> }</button>
-                    
                     <h4>Entrar com:</h4>
 
                     <div className='apps'>
-                        <a href='https://www.instagram.com/'><img src='/assets/images/instagram.png' alt=''/></a>
-                        <a href='https://www.facebook.com/'><img src='/assets/images/facebook.png' alt=''/></a>
-                        <a href='https://www.google.com/'><img src='/assets/images/google.png' alt=''/></a>
+                        <a href='#'><img src='/assets/images/instagram.png' alt=''/></a>
+                        <a href='#'><img src='/assets/images/facebook.png' alt=''/></a>
+                        <a href='#'><img src='/assets/images/google.png' alt=''/></a>
                     </div>
 
-                    <a href='/'><button>confirmar</button></a>
+                    <Link to='/'><button>confirmar</button></Link>
                 </div>
-
             </div>
-           
         </div>
     )
 }
