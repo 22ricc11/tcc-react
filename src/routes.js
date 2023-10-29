@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 //pag
 import Homepage from './pages/home';
 import PrivacyPolicy from './components/Politica_de_Privacidade';
-import Footer from './components/rodapé';
+import Footer from './components/rodapé/rodape';
 
 //USER
 import Login from './pages/login/login';

@@ -1,84 +1,47 @@
-.bp{
+.cadP{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    background-color: #181B19;
-    padding: 20px;
-    height: 100vh;
-    text-align: center;
+    
+    background-color: #1b1819;
 
-    .conteudo{
-        
-        a img{
-            position: relative;
-            right: 700px;
-            width: 30px;
-        }
-
-        h1{
-            position: relative;
-            bottom: 20px;
-        }
-        
-        .tudo{
-                display: flex;
-                justify-content:space-evenly;
-                width: 1500px;
-
-
-            #up{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                background-color: #F4F9E9;
-                border-radius: 10px;
-                width: 350px;
-                height: 500px;
-
-
-                img{
-                    width: 150px;
-                }
-
-                img:hover{
-                    transform: scale(1.1);
-                    transition: .3s;
-                }
-            }
+        .put{
+            display: flex;
+            flex-direction: row;
 
             div{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                
-                
+                align-items: center;
 
                 input{
-                    margin: 20px;
+                    margin: 30px;
+                    background-color: #403E3E;
                     border: none;
-                    border-radius: 5px;
-                    width: 400px;
-                    height: 28px;
-                    background-color: #40403E;
-                    color: #959595;
-                    text-align: center;
+                    border-radius: 5px; 
+                    width: 300px;
+                    height: 24px;  
+                }
+
+                #dois{
+                    display: flex;
+                    flex-direction: row;
+                    width: 50px;
+                    height: 30px;
+                }
+            }
+
+            .upload{
+                border-radius: 10px;
+                background-color: #ffff;
+                width: 500px;
+
+                img{
+                    width: 150px;
                 }
             }
         }
-
-        a button{
-
-            border: none;
-            border-radius: 26px;
-            padding: 8px 25px;
-            background-color: #6E8142;
-            font-size: 20px;
-        }
-
-        a button:hover{
-            transform: scale(1.1);
-            transition: .3s;
-        }
-    }
+   
 }

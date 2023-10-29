@@ -1,65 +1,40 @@
-import { useState } from 'react';
-import './cadP.scss';
-import { Link } from 'react-router-dom';
-
-import { useDropzone } from 'react-dropzone';
+import { useState } from 'react'
+import './cadP.scss'
+import CabAdm from '../../../components/cabecalho/cabAdm/cabAdm'
 
 export default function CadP(){
     const[nomeP, setNomeP] = useState('')
-    const[valor, setValor] = useState('')
-    const[desc, setDesc] = useState('')
-    const[tipo, setTipo] = useState('')
+    const[valorP, setValorP] = useState('')
+    const[descP, setDescP] = useState('')
+    const[tipoP, setTipoP] = useState('')
 
-   
-        const onDrop = (acceptedFiles) => {
-          if (acceptedFiles.length > 0) {
-            const selectedFile = acceptedFiles[0];
-            console.log('Arquivo selecionado:', selectedFile.name);
-          }
-        }
-
-        const { getRootProps } = useDropzone({ onDrop });
-
-        const dropzoneStyles = {
-            cursor: 'pointer',
-          }
-          
-          const buttonStyles = {
-            border: 'none',
-            background: '#F4F9E9',
-            color: '#F4F9E9',
-            cursor: 'pointer',
-          }
-    
 
     return(
-        <div className='bp'>
-            <div className='conteudo'>
-                <Link to='/princ'><img src='/assets/images/seta.png' alt=''/></Link>
-
+        <div className='cadP'>
+            <CabAdm/>
                 <h1>Cadastrar Produto</h1>
-               
-               <div className='tudo'>
-                
-                    <div id='up' {...getRootProps()} style={dropzoneStyles}>
-                        <button style={buttonStyles}><img src='/assets/images/upload.png' alt='' /></button>
-                    </div>
-                
 
-
+                <div className='put'>
                     <div>
-                        <input type='text' value={nomeP} placeholder='Nome do Produto' onChange={e => setNomeP(e.target.value)}/>
-                        <input type='number' value={valor} placeholder='Valor R$' onChange={e => setValor(e.target.value)}/>
-                        <input type='text' value={desc} placeholder='Descrição do Produto' onChange={e => setDesc(e.target.value)}/>
-                        <input type='text' value={tipo} placeholder='Tipo do Produto' onChange={e => setTipo(e.target.value)}/>
+                        <input type='text' value={nomeP} placeholder='Nome do produto' onChange={e => setNomeP(e.target.value)}/>
+                        <input type='number' value={valorP} placeholder='Valor do produto R$' onChange={e => setValorP(e.target.value)}/>
+                        <input type='text' value={descP} placeholder='Descrição do produto' onChange={e => setDescP(e.target.value)}/>
+                        <input type='text' value={tipoP} placeholder='Tipo do produto' onChange={e => setTipoP(e.target.value)}/>
+                        
+                        <div id='dois'>
+                            <input type='checkbox'/>
+                            <label>Disponível</label>
+                            <input type='checkbox'/> 
+                            <label>Indisponível</label>
+                        </div>
+                        
+                    </div>             
+
+                    <div className='upload'>
+                        <img src='assets/images/upload.png' alt=''/>
                     </div>
-
                 </div>
-
-                <Link to=''><button>Cadastrar</button></Link>
-                
-            </div>
-            
+           
         </div>
     )
 }

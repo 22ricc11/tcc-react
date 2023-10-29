@@ -1,0 +1,44 @@
+.cabADM{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #444D41;
+    width: 100vw;
+    
+    #logo{
+        width: 80px;
+        height: 53px;
+    }
+
+    #fan2{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        top: 0;
+
+
+        p{
+        color: #181b19;
+        font-size: 15px;
+        }
+
+        img{
+            margin: 10px;
+        }
+
+        #user{
+            width: 30px;
+            height: 29px;
+        }
+
+        #casa{
+            width: 30px;
+            height: 33px;
+        }
+    }
+
+}
