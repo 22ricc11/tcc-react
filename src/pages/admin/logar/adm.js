@@ -26,7 +26,7 @@ export default function Logar(){
                     <div id='in'>
                         <input type="text" value={email} placeholder='E-mail' onChange={e=> setEmail(e.target.value)} />
                         <input type={senhaV ? 'text' : 'password'} value={senha} placeholder='Senha' onChange={e=> setSenha(e.target.value)} />
-                        <button onClick={toggleVisibilidadeSenha}> {senhaV ? <img src='/assets/images/olhoA.svg' alt=''/> : <img src='/assets/images/olhoF.svg' alt=''/> }</button>
+                        <button onClick={toggleVisibilidadeSenha}> {senhaV ? <img src='/assets/images/olhoA.png' alt=''/> : <img src='/assets/images/olhoF.png' alt=''/> }</button>
                     </div>
                     
                 <Link to='/princ'><button>confirmar</button></Link>

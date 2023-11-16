@@ -2,13 +2,14 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 //pag
-import Homepage from './pages/home';
+import Homepage from './pages/user/home';
 import PrivacyPolicy from './components/Politica_de_Privacidade';
 import Footer from './components/rodapé/rodape';
 
 //USER
-import Login from './pages/login/login';
-import Cadastro from './pages/cadastro/cad';
+import Login from './pages/user/login/login';
+import Cadastro from './pages/user/cadastro/cad';
+import Endereco from './pages/user/endereço/endereco';
 
 //ADM
 import Logar from './pages/admin/logar/adm';
@@ -27,6 +28,7 @@ export default function Index(){
                 //USER
                 <Route path='/login' element={<Login/>} />
                 <Route path='/cadastro' element={<Cadastro/>} />
+                <Route path='/endereco' element={<Endereco/>} />
 
                 //ADM
                 <Route path='/adm' element={<Logar/>} />

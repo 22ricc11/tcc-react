@@ -1,13 +1,14 @@
 import './princ.scss'
-import CabAdm from '../../../components/cabecalho/cabAdm/cabAdm'
+import CabADM from '../../../components/cabecalho/cabAdm/cabAdm'
 import Footer from '../../../components/rodapé/rodape'
 import { Link } from 'react-router-dom'
+
 
 export default function Princ(){
 
     return(
         <div className='princ'>
-            <CabAdm/>
+            <CabADM/>
 
             <div className='princ-one'>
                 <h1>Seja bem vindo <br/> novamente adm!</h1>
@@ -24,8 +25,8 @@ export default function Princ(){
                     <Link to='/cad'>Cadastar <br/> Produto</Link>
                 </div>
                 <div>
-                    <img src='assets/images/construcao.png' alt=''/>
-                    <Link to='#'>Em <br/> construção</Link>
+                    <img src='assets/images/' alt=''/>
+                    <Link to='#'>Produtos <br/> Cadastrados</Link>
                 </div>
                 <div>
                     <img src='assets/images/grafico.png' alt=''/>

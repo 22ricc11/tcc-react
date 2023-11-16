@@ -1,0 +1,47 @@
+.pag-endereco{
+    display: flex;
+    flex-direction: column;
+    background-color: #181B19;
+
+    .a{
+        display: flex;
+        flex-direction: column;
+        width:100vw;
+        height: 85.8vh;
+        align-items: center;
+
+      
+
+        .c{
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+
+            input{
+                margin: 15px;
+                border: none;
+                border-radius: 5px;
+                width: 400px;
+                height: 30px;
+                background-color: #403E3E;
+                color: #8D8C8C;
+                text-align: center;
+            }
+        }
+
+        a button{
+            border-radius: 23px;
+            border: 0px;
+            background-color: #6E8142;
+            padding: 13px 43px;
+        
+            font-size: 20px;
+            margin-top: 40px;
+        }
+        
+        a button:hover{
+            transform: scale(1.1);
+            transition: .3s;
+        }
+    }
+}

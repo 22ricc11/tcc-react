@@ -1,41 +1,78 @@
 import { useState } from 'react'
 import './cadP.scss'
 import CabAdm from '../../../components/cabecalho/cabAdm/cabAdm'
+import { Link } from 'react-router-dom'
+
 
 export default function CadP(){
-    const[nomeP, setNomeP] = useState('')
-    const[valorP, setValorP] = useState('')
-    const[descP, setDescP] = useState('')
-    const[tipoP, setTipoP] = useState('')
+    const[nomeP, setNomeP] = useState()
+    const[valorP, setValorP] = useState()
+    const[descP, setDescP] = useState()
+    const[tipoP, setTipoP] = useState()
+    const[disponivel, setDisponivel] = useState(false);
+    const[indisponivel, setIndisponivel] = useState(false);
 
+    const DisponivelChange = () => {
+        setDisponivel(!disponivel);
+        setIndisponivel(false);
+      };
+    
+      const IndisponivelChange = () => {
+        setIndisponivel(!indisponivel);
+        setDisponivel(false);
+      };
+
+
+      const handleValorChange = (e) => {
+        const inputValue = e.target.value;
+
+        // Verificar se o valor começa com o símbolo de R$
+    if (inputValue.startsWith('R$')) {
+        setValorP(inputValue);
+      } else {
+        setValorP(`R$ ${inputValue}`);
+    }
+  };
+    
 
     return(
-        <div className='cadP'>
+        <div className='pag-cadp'>
             <CabAdm/>
-                <h1>Cadastrar Produto</h1>
 
-                <div className='put'>
-                    <div>
-                        <input type='text' value={nomeP} placeholder='Nome do produto' onChange={e => setNomeP(e.target.value)}/>
-                        <input type='number' value={valorP} placeholder='Valor do produto R$' onChange={e => setValorP(e.target.value)}/>
-                        <input type='text' value={descP} placeholder='Descrição do produto' onChange={e => setDescP(e.target.value)}/>
-                        <input type='text' value={tipoP} placeholder='Tipo do produto' onChange={e => setTipoP(e.target.value)}/>
-                        
-                        <div id='dois'>
-                            <input type='checkbox'/>
-                            <label>Disponível</label>
-                            <input type='checkbox'/> 
-                            <label>Indisponível</label>
-                        </div>
-                        
-                    </div>             
+            <div className='tudinho'>
+                <div className='inputs'>
+                    <h1>Cadastrar Produtos</h1>
 
-                    <div className='upload'>
-                        <img src='assets/images/upload.png' alt=''/>
+                    <div className='puts'>
+                        <input type="text" value={nomeP} placeholder='Nome do Produto' onChange={e=> setNomeP(e.target.value)} />
+                        <input type="text" value={valorP} placeholder='Valor do Produto R$' onChange={handleValorChange}/>
+                        <input type="text" value={descP} placeholder='Descrição do Produto' onChange={e=> setDescP(e.target.value)} />
+                        <input type="text" value={tipoP} placeholder='Tipo do Produto' onChange={e=> setTipoP(e.target.value)} />
+                    
+                    
+                        <div className='check'>
+                            <div>
+                                <input type='checkbox' checked={disponivel} onChange={DisponivelChange}/>
+                                <label htmlFor='disponivel'>Disponível</label>
+                            </div>
+
+                            <div>
+                                <input type='checkbox' checked={indisponivel} onChange={IndisponivelChange}/>
+                                <label htmlFor='indisponivel'>Indisponível</label>
+                            </div>
+                        </div> 
                     </div>
                 </div>
-           
+
+                <div className='download'>
+                    <div id='box-images'>
+                        <img src='/assets/images/upload.png'/>
+                    </div>
+
+                    <Link to=''><button>Cadastrar</button></Link>
+                </div>
+            </div>
         </div>
     )
-}
 
+}
