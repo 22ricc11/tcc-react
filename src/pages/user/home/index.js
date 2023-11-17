@@ -1,100 +1,194 @@
-export default function HomePage () {
-    return(
-        <div className="Box_Principal">
+import './index.scss';
 
-\\cabeçario
-            <header>
-                    <img src='/assets/images/logo192.png' alt='Logo' />
-                    <img src='/assets/images/img_icon_1.png' alt='Logo' />
-                    <h1>Login</h1>
-            </header>
+import Carrossel from '../../../components/carousel/carousel';
 
+export default function Home() {
 
-\\pesquisa
-            <nav>
+  ///Função que faz interação com o identificador Natural
+  function colorNatural() {
+    var natural = document.getElementById("natural")
+    natural.style.backgroundColor = "#0F2506";
 
-            <img src='/assets/images/Bambu_pesquisa.png' alt='Logo' />
-            <input type="search"></input>
+    var equipe = document.getElementById("equipe")
+    equipe.style.backgroundColor = "#fff";
 
-            </nav>
+    var objetivo = document.getElementById("objetivo")
+    objetivo.style.backgroundColor = "#fff";
 
+    var visao = document.getElementById("visao")
+    visao.style.backgroundColor = "#fff";
 
-\\entremeio
-            <div>
+    var txt = document.getElementById("txt-alternativo")
+    txt.innerHTML = "Acreditamos na importância de cuidar do nosso corpo e do meio ambiente de forma consciente e sustentável. É por isso que apresentamos nossa proposta para uma empresa de cosméticos vegana, que busca oferecer produtos de beleza livres de ingredientes de origem animal, e que não são testados em animais. Nossa empresa tem como objetivo principal promover a beleza natural, saudável e ética, proporcionando produtos de alta qualidade que atendam às necessidades dos consumidores conscientes."
+  } 
 
-            <img src="/assets/images/img-icon_2.png" />
-            <h1>Cuidando de você,
-                respeitando a natureza.</h1>
+  ///Função que faz interação com o identificador Equipe
+  function colorEquipe() {
+    var equipe = document.getElementById("equipe")
+    equipe.style.backgroundColor = "#0F2506";
 
+    var objetivo = document.getElementById("objetivo")
+    objetivo.style.backgroundColor = "#fff";
+
+    var visao = document.getElementById("visao")
+    visao.style.backgroundColor = "#fff";
+
+    var natural = document.getElementById("natural")
+    natural.style.backgroundColor = "#fff";
+
+    var txt = document.getElementById("txt-alternativo")
+    txt.innerHTML = "Na sinergia empreendedora da Naturalmente, Marilia Silva, co-fundadora e encarregada dos Serviços Terceirizados de Suporte (STS), é a força motriz por trás da eficiência operacional. Com habilidades organizacionais afiadas, ela assegura que os serviços terceirizados estejam alinhados com os padrões de qualidade e integridade da empresa. <br/><br/>Ricardo Anastacio, co-fundador e Diretor de TI (Tecnologia da Informação), é o arquiteto da infraestrutura tecnológica da Naturalmente. Sua liderança na implementação de soluções digitais inovadoras garante que a empresa esteja na vanguarda da tecnologia, promovendo eficiência e segurança em todos os aspectos. <br/><br/>Sophia Zilio, co-fundadora e Diretora Financeira, desenha os contornos financeiros da Naturalmente. Com uma abordagem estratégica, Sophia gerencia as finanças da empresa, garantindo a sustentabilidade não apenas em termos ecológicos, mas também financeiramente. Juntos, Marilia, Ricardo e Sophia formam um trio empreendedor dedicado, cada um desempenhando um papel vital no sucesso e no impacto positivo da Naturalmente."
+  } 
+
+  ///Função que faz interação com o identificador Visão
+  function colorVisao() {
+    var visao = document.getElementById("visao")
+    visao.style.backgroundColor = "#0F2506";
+
+    var natural = document.getElementById("natural")
+    natural.style.backgroundColor = "#fff";
+
+    var equipe = document.getElementById("equipe")
+    equipe.style.backgroundColor = "#fff";
+
+    var objetivo = document.getElementById("objetivo")
+    objetivo.style.backgroundColor = "#fff";
+
+    var txt = document.getElementById("txt-alternativo")
+    txt.innerHTML = "Vislumbramos um futuro no qual a Naturalmente se consolida como líder global na oferta de produtos veganos e sustentáveis. Almejamos ser reconhecidos não apenas por nossa excelência em oferecer alternativas éticas e eco-friendly, mas também por impulsionar uma mudança cultural em direção a escolhas mais conscientes. Enxergamos um mundo em que a Naturalmente seja uma inspiração para outras empresas, incentivando a transição para práticas mais sustentáveis, e onde os consumidores possam fazer escolhas alinhadas com seus valores, promovendo assim um impacto positivo em escala global."
+  } 
+
+  ///Função que faz interação com o identificador Objetivo
+  function colorObjetivo() {
+    var objetivo = document.getElementById("objetivo")
+    objetivo.style.backgroundColor = "#0F2506";
+
+    var visao = document.getElementById("visao")
+    visao.style.backgroundColor = "#fff";
+
+    var natural = document.getElementById("natural")
+    natural.style.backgroundColor = "#fff";
+
+    var equipe = document.getElementById("equipe")
+    equipe.style.backgroundColor = "#fff";
+
+    var txt = document.getElementById("txt-alternativo")
+    txt.innerHTML = "Promover a adoção de um estilo de vida sustentável e ético, proporcionando aos consumidores uma ampla variedade de produtos veganos de alta qualidade. Buscamos não apenas atender às necessidades dos clientes, mas também inspirar e educar sobre os benefícios de escolhas conscientes, impactando positivamente o meio ambiente, a saúde e o bem-estar animal. Nosso compromisso é criar um mundo onde a sustentabilidade seja uma parte integrante do cotidiano, e onde a beleza e o bem-estar andem de mãos dadas com a responsabilidade ambiental"
+  } 
+
+  return (
+    <div id="page-home">
+      <header>
+        <nav>
+          <div id='logo'>
+            <img src='/assets/images/logo192.png' alt='logo'/>
+          </div>
+
+          <form>
+            <div id='lupa-pesquisa'>
+              <img src='/assets/images/lupa_pesquisa.png'/>
             </div>
 
+            <input type='text' placeholder='O que você proucura hoje?'/>
+          </form>
 
-\\meio
-            <div classname='meio'>
-                
-                <div classname='Selos'>
-                    <img src="/assets/images/Selo_1.png" />
-                    <img src="/assets/images/Selo_2.png" />
-                    <img src="/assets/images/Selo_3.png" />
-                    <img src="/assets/images/Selo_4.png" />
-                    <img src="/assets/images/Selo_5.png" />
-                    <img src="/assets/images/Selo_6.png" />
-                </div>
-                
-                <div className="Box_Meio">
-
-
-            <div classname="eclipse">
-                <img src="/assets/images/eclipse.png" />
-                <img src="/assets/images/eclipse.png" />
-                <img src="/assets/images/eclipse.png" />
-                <img src="/assets/images/eclipse.png" />
+          <div id='navegacao-basica'>
+            <div id='icon-favoritos'>
+              <a href='#' alt='icone-favorito'><img src='/assets/images/icon_favoritos.png' /></a>
+              
+              <p>Favoritos</p>
             </div>
-            
 
-                <p>Acreditamos na importância de cuidar do nosso corpo e do meio ambiente de forma consciente e sustentável. É por isso que apresentamos nossa proposta para uma empresa de cosméticos vegana, que busca oferecer produtos de beleza livres de ingredientes de origem animal, e que não são testados em animais. Nossa empresa tem como objetivo principal promover a beleza natural, saudável e ética, proporcionando produtos de alta qualidade que atendam às necessidades dos consumidores conscientes.</p>
+            <div id='conta-usuario'>
+              <a href="#"><img src='/assets/images/icon_config_cliente.png' alt='icone usuario'/></a>
 
-                </div>
+              <p>Entrar na minha conta</p>
+            </div>
 
+            <div id='carrinho'>
+              <a href="#"><img src='/assets/images/icon_carrinho.png' alt='icone carrinho'/></a>
 
-//comentarios
-                <div classname="coments">
+              <p>Sacola</p>
+            </div>
+          </div>
+        </nav>
 
-                <div classname="coment_1"><img src="/assets/images/Usuario.png" />
-                <p>A qualidade dos produtos são impossíveis de não se apaixonar.</p>
-                </div>
+        
+      </header>
 
-                <div className="coment_2"> <h1>FeedBacks</h1> <img src="/assets/images/Usuario.png" />
-                <p>A NaturalMente tem produtos ótimos e incrivelmente Lindos  :D</p>
-                </div>
+      <main>
+        <section id='apresentacao'>
+          <div id='imagem-oleo'>
+            <img src='/assets/images/imagem_oleos.png' />
+          </div>
 
-                <div classname="coment_3"><img src="/assets/images/Usuario.png" />
-                <p>O fato desses produtos serem veganos é incrível! A eficiência e sua composição são espetaculares!</p>
-                </div>
+          <div id='txt-oleo'>
+            <h1>Nossa linha com óleos essenciais</h1>
+            <p>Pura Hidratação. Com ingredientes funcionais, derivados vegetais e de alta compatibilidade com a fisiologia da pele, o Sérum Facial Vegana Pura Hidratação contém óleos essenciais de Palmarosa, Gerânio, Ylang-Ylang, Lavanda, Petitgrain, Laranja Doce e óleo vegetal de Jojoba que atua como agente hidratante e renovador da pele, estimulando sua recuperação e forma fisiológica, protegendo-a de agressões externas. <a href='#'>Saiba mais ...</a></p>
+          </div>
+        </section>
 
-                <div>
+        <hr/>
+        
+        <section id='vantagens-de-uso'>
+          <div className='bloco-informativo'>
+            <img src='/assets/images/imagem-animais.png'/>
+          </div>
 
-                <img src="/assets/images/dobradiça_linah.png" />
+          <div className='bloco-informativo'>
+            <img src='/assets/images/imagem-global.png'/>
+          </div>
 
-                <h1>Linha com Ácido Hialurônico </h1>
+          <div className='bloco-informativo'>
+            <img src='/assets/images/imagem-planta.png'/>
+          </div>
 
-                <div>
+          <div className='bloco-informativo'>
+            <img src='/assets/images/imagem-fluor.png'/>
+          </div>
 
-                    <img src="/assets/images/img_referencia_linah.png" />
+          <div className='bloco-informativo'>
+            <img src='/assets/images/imagem-embalagem.png'/>
+          </div>
 
-                    <h3> A proposta de um sérum de ácido hiaulurônico é ser adequado para todos os tipos de pele, incluindo pele seca, oleosa, mista e sensível. A fórmula é projetada para não obstruir os poros, minimizando o risco de acne ou irritação. Além disso, um bom sérum de ácido hiaulurônico pode ser usado em conjunto com outros produtos de cuidados com a pele, como hidratantes e protetores solares, para obter resultados ainda melhores. </h3>
+          <div className='bloco-informativo'>
+            <img src='/assets/images/imagem-ingredientes.png'/>
+          </div>
+        </section>
 
-                    <img src="/assets/images/img_cosmeticos_linah.png" />
+        <hr/>
 
-                </div>
+        <section id='carrossel'>
+          <h2>Mais Vendidos</h2>
+          <Carrossel/>
+        </section>
 
+        <section id='descricao'>
+          <div>
+            <div className='circulo-selecao1'><div id='natural' onClick={colorNatural}>Natural<br/>mente</div></div>
+            <div className='circulo-selecao'><div id='equipe' onClick={colorEquipe}>Equipe</div></div>
+            <div className='circulo-selecao'><div id='visao' onClick={colorVisao}>Visão</div></div>
+            <div className='circulo-selecao'><div id='objetivo' onClick={colorObjetivo}>Objetivo</div></div>
+          </div>
 
-                </div>
+          <div id='txt-descricao'>
+            <p id='txt-alternativo'>
+              Acreditamos na importância de cuidar do nosso corpo e do meio ambiente de forma consciente e sustentável. É por isso que apresentamos nossa proposta para uma empresa de cosméticos vegana, que busca oferecer produtos de beleza livres de ingredientes de origem animal, e que não são testados em animais. Nossa empresa tem como objetivo principal promover a beleza natural, saudável e ética, proporcionando produtos de alta qualidade que atendam às necessidades dos consumidores conscientes.
+            </p>
+          </div>
+        </section>
+      </main>
 
-                </div>
-
+      <footer>
+        <div id='logo-rodape'>
+          <img src='/assets/images/logo192.png'/>
         </div>
-    </div>    
-    );
+
+        <div id='txt-rodape'>
+          <p>A NaturalMente  |  Produtos ▾  |  Lojas  |  Contato | Política de Privacidade </p>
+        </div>
+      </footer>
+    </div>
+  );
 }
 

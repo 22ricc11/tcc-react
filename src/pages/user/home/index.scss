@@ -1,0 +1,246 @@
+@font-face {
+    font-family: 'Sync-regular';
+    src: url('../../../../public/assets/font/Syncopate-Bold.ttf');
+}
+
+#page-home {
+    background-color: #F5F2F9;
+    height: 100vh;
+
+
+    header {
+        background-image: url('../../../../public/assets/images/imagem_fundo_header.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    #logo img{
+        width: 135px;
+        height: 135px;
+    }
+
+    form {
+        background-color: white;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        width: 35vw;
+        height: 5vh;
+    }
+
+    #lupa-pesquisa {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #lupa-pesquisa img {
+        margin-top: 5px;
+        width: 30px;
+        height: 30px;
+    }
+
+    input:focus {
+        box-shadow: 0;
+        border: none;
+        outline: 0;
+    }
+
+    input {
+        font-size: 1em;
+        text-indent: 5px;
+        border: none;
+        width: 30vw;
+    }
+
+    #navegacao-basica {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    #navegacao-basica img {
+        width: 38px;
+        height: 38px;
+    }
+
+    #navegacao-basica div {
+        color: white;
+        font-size: 0.8em;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+        margin: 5px;
+        width: 10vw;
+        height: 15vh;
+    }
+
+    #icon-favoritos {
+        text-align: center;
+        margin-top: 5px;
+        width: 8vw;
+        padding-bottom: 17px;
+
+    }
+
+    #conta-usuario p{
+        text-align: center;
+        margin-top: 5px;
+        width: 8vw;
+    }
+
+    #carrinho {
+        padding-bottom: 17px;
+    }
+
+    #carrinho p {
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    /////////
+
+    #apresentacao {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 20px;
+        margin: 10px;
+    }
+
+    #imagem-oleo {
+        margin-right: 7.5px;
+    }
+
+    #txt-oleo {
+        margin-left: 7.5px;
+
+        p{
+            color: #000;
+        }
+    }
+
+    #txt-oleo a {
+        color: rgb(11, 203, 252);
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    #vantagens-de-uso {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bloco-informativo {
+        margin: 10px;
+    }
+
+    #carrossel h2{
+        text-indent: 10px;
+        margin: 10px;
+    }
+
+    #descricao div{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .circulo-selecao {
+        border-radius: 100%;
+        border: 2px solid #0F2506;
+        margin-bottom: 20px;
+        padding: 10px;
+        height: 21vh;
+        width: 14vw;
+    }
+
+    .circulo-selecao1 {
+        border-radius: 100%;
+        border: 2px solid #0F2506;
+        margin-bottom: 20px;
+        padding: 10px;
+        height: 21vh;
+        width: 14vw;
+    }
+
+    .circulo-selecao > div {
+        color: #90A955;
+        font-size: 1.5em;
+        border-radius: 100%;
+        padding: 10px;
+        height: 18vh;
+        width: 15vw;
+    }
+
+    .circulo-selecao1 > div {
+        background-color: #0F2506;
+        color: #90A955;
+        font-size: 1.5em;
+        border-radius: 100%;
+        padding: 10px;
+        height: 18vh;
+        width: 15vw;
+    }
+
+    #txt-descricao {
+        margin-top: 10px;
+        width: 100%vw;
+    }
+
+    #txt-alternativo {
+        font-size: 1.7em;
+        text-align: start;
+        align-content: flex-start;
+        padding: 5px;
+        margin-right: 20px;
+        width: 77vw;
+        
+    
+        color: #000;
+    
+    }
+
+    ////////
+
+    footer {
+        background-color: #282F25;
+        color: white;
+        display: flex;
+    }
+
+
+
+    #logo-rodape img {
+        width: 50px;
+        height: 50px;
+    }
+
+    #txt-rodape {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10px;
+        width: 100%;
+    }
+
+
+
+
+}

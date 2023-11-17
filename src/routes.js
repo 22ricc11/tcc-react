@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Homepage from './pages/user/home';
 import PrivacyPolicy from './components/Politica_de_Privacidade';
 import Footer from './components/rodapé/rodape';
+import Carrossel from './components/carousel/carousel';
 
 //USER
 import Login from './pages/user/login/login';
@@ -27,6 +28,7 @@ export default function Index(){
                 <Route path='/' exact={true} element={<Homepage/>} />
                 <Route path='/PrivacyPolicy' element={<PrivacyPolicy/>} />
                 <Route path='/footer' element={<Footer/>} />
+                <Route path='/carrossel' element={<Carrossel/> }/>
 
                 //USER
                 <Route path='/login' element={<Login/>} />

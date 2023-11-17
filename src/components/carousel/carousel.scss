@@ -1,0 +1,26 @@
+#carousel-components {
+    background-image: url('../../../public/assets/images/imagem-carrossel.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    padding: 30px 0px 50px 0px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 35vh;
+
+    .carousel-elements {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .carousel-elements img {
+        margin: 10px;
+        height: 25vh;
+    }
+
+    .carousel-indicators {
+        margin-bottom: -1rem;
+    }
+}
