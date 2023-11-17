@@ -1,0 +1,160 @@
+.pag-confirmar{
+    display: flex;
+    flex-direction: column;
+    
+    .aCP{
+        display: flex;
+        flex-direction: column;
+        background-color: #181B19;
+        height: 85.8vh;
+        align-items: center;
+
+        div{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+
+            a img{
+                width: 30px;
+                position: absolute;
+                top: 85px;
+                left: 40px;
+            }
+
+        }
+
+        #endereço{
+            img{
+                width: 30px;
+            }
+
+            a{
+                display: flex;
+                color: #ffff;
+                text-decoration: none;
+                font-size: 10px;
+                align-items: center;
+                padding: 8px;
+            }
+
+            a:hover{
+                transform: scale(1.1);
+                transition: .5s;
+            }
+        }
+
+        hr{
+            margin-top: 34px;
+            width: 80vw;
+        }
+
+        .formas{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 70vw;
+
+            h3{
+                font-size: 30px;
+            }
+
+            .tiposDePagam{
+                display: flex;
+                flex-direction: column;
+                width: 300px;
+                background-color: #d9d9d98f;
+                border-radius: 10px;
+                
+                div{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    margin: 10px;
+                    padding-left: 40px;
+
+                    
+
+                    input[type='radio']{
+                        margin-right: 6px;
+                    }
+
+                   label{
+                        display: flex;
+                        color: #ffff;
+                        align-items: center;
+                        
+                        img{
+                            margin-right: 15px;
+                        }
+                    }
+                }
+            }
+
+            #frasePag{
+                display: flex;
+                justify-content: flex-end;
+                width: 50vw;
+                position:absolute;
+                top: 330px;
+
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                }
+
+                a:hover{
+                    transform: scale(1.2);
+                    transition: .6s;
+                }
+            }
+        }
+
+        .detalhes{
+            display: flex;
+            flex-direction: column;
+            width: 70vw;
+
+            h3{
+                font-size: 30px;
+            }
+
+            div{
+                display: flex;
+                flex-direction: column;
+                width: 300px;
+                padding-left: 40px;
+
+                p{
+                    color: #9AB165;
+                    margin-bottom: 10px;
+                }
+
+                input{
+                    margin-bottom: 10px;
+                    border-radius: 5px;
+                    border: 0px;
+                    height: 25px;
+                    background-color: #403E3E;
+                }
+            }
+
+            #finalizar{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                width: 72vw;
+
+                a{
+                    color: #9AB165;
+                    text-decoration: none;
+                    font-size: 20px;
+                }
+
+                a:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

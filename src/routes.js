@@ -10,6 +10,8 @@ import Footer from './components/rodapé/rodape';
 import Login from './pages/user/login/login';
 import Cadastro from './pages/user/cadastro/cad';
 import Endereco from './pages/user/endereço/endereco';
+import ConfPed from './pages/user/confPed/confirmar';
+
 
 //ADM
 import Logar from './pages/admin/logar/adm';
@@ -24,11 +26,13 @@ export default function Index(){
                 <Route path='/' exact={true} element={<Homepage/>} />
                 <Route path='/PrivacyPolicy' element={<PrivacyPolicy/>} />
                 <Route path='/footer' element={<Footer/>} />
-                
+
                 //USER
                 <Route path='/login' element={<Login/>} />
                 <Route path='/cadastro' element={<Cadastro/>} />
                 <Route path='/endereco' element={<Endereco/>} />
+                <Route path='/confirmarpedido' element={<ConfPed/>} />
+                
 
                 //ADM
                 <Route path='/adm' element={<Logar/>} />

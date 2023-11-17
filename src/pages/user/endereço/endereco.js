@@ -18,7 +18,10 @@ export default function Endereco(){
             <CabUser/>
 
             <div className='a'>
-                <h1>Endereço</h1>
+                <div>
+                    <Link to='/confirmarpedido'><img src='/assets/images/seta.png'/></Link>
+                    <h1>Endereço</h1>
+                </div>
 
                 <div className='c'>
                     <input type='text' value={cep} placeholder='Cep' onChange={e=> setCep(e.target.value)}/>        

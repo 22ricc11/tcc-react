@@ -1,0 +1,53 @@
+.pag-modal{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: fixed;
+  top: 300px;
+  left: 600px;
+  background-color: #181b19;
+
+
+  p{
+    color: #90A955;
+  }
+
+  .inf-meio{
+    display: flex;
+    flex-direction: column;
+
+    .form{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+
+      input{
+        border: none;
+        border-radius: 5px;
+        margin: 5px;
+        background-color: #403E3E;
+        color: #A4A4A4;
+        height: 25px;
+        text-align: center;
+      }
+
+      #d2{
+        width: 345px;
+      }
+    }
+  }
+
+  #botao{
+    display: flex;
+    flex-direction: column;
+
+    button{
+      margin: 5px;
+      border: none;
+      border-radius: 15px;
+      padding: 7px 10px;
+      background-color: #6E8142;
+    }
+  }
+}
