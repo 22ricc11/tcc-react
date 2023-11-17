@@ -3,6 +3,8 @@ import './cadP.scss'
 import CabAdm from '../../../components/cabecalho/cabAdm/cabAdm'
 import { Link } from 'react-router-dom'
 
+import 'react-toastify/dist/ReactToastify.css';
+import { toast, ToastContainer } from 'react-toastify';
 
 export default function CadP(){
     const[nomeP, setNomeP] = useState()
@@ -34,10 +36,15 @@ export default function CadP(){
     }
   };
     
+    function cad(){
+        toast.dark('Produto cadastrado com sucesso!!!');
+    }
+    
 
     return(
         <div className='pag-cadp'>
             <CabAdm/>
+            <ToastContainer/>
 
             <div className='tudinho'>
                 <div className='inputs'>
@@ -69,7 +76,7 @@ export default function CadP(){
                         <img src='/assets/images/upload.png'/>
                     </div>
 
-                    <Link to=''><button>Cadastrar</button></Link>
+                    <button onClick={cad}>Cadastrar</button>
                 </div>
             </div>
         </div>

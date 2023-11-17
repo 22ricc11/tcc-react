@@ -18,6 +18,7 @@ import Logar from './pages/admin/logar/adm';
 import Principal from './pages/admin/principal/princ';
 import CadProduto from './pages/admin/cadPoduto/cadP';
 
+import InformacoesG from './pages/admin/grafico/infomacoesg';
 
 export default function Index(){
     return(
@@ -38,7 +39,9 @@ export default function Index(){
                 <Route path='/adm' element={<Logar/>} />
                 <Route path='/princ' element={<Principal/>} /> 
                 <Route path='/cad' element={<CadProduto/>} /> 
-                
+
+                <Route path='/informacoesg' element={<InformacoesG/>} />
+
             </Routes>
         </BrowserRouter>
     )

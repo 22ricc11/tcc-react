@@ -25,12 +25,12 @@ export default function Princ(){
                     <Link to='/cad'>Cadastar <br/> Produto</Link>
                 </div>
                 <div>
-                    <img src='assets/images/' alt=''/>
-                    <Link to='#'>Produtos <br/> Cadastrados</Link>
+                    <img src='assets/images/prodCadastrados.png' alt=''/>
+                    <Link to=''>Produtos <br/> Cadastrados</Link>
                 </div>
                 <div>
                     <img src='assets/images/grafico.png' alt=''/>
-                    <Link to=''>Gráfico</Link>
+                    <Link to='/informacoesg'>Gráfico</Link>
                 </div>
             </div>
             <Footer/>
