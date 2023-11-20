@@ -1,5 +1,5 @@
 import './index.scss';
-
+import Footer from '../../../components/rodapé/rodape' 
 import Carrossel from '../../../components/carousel/carousel';
 
 export default function Home() {
@@ -86,7 +86,7 @@ export default function Home() {
 
           <form>
             <div id='lupa-pesquisa'>
-              <img src='/assets/images/lupa_pesquisa.png'/>
+              <img src='/assets/images/lupa.png'/>
             </div>
 
             <input type='text' placeholder='O que você proucura hoje?'/>
@@ -94,13 +94,13 @@ export default function Home() {
 
           <div id='navegacao-basica'>
             <div id='icon-favoritos'>
-              <a href='#' alt='icone-favorito'><img src='/assets/images/icon_favoritos.png' /></a>
+              <a href='' alt='icone-favorito'><img src='/assets/images/icon_favoritos.png' /></a>
               
               <p>Favoritos</p>
             </div>
 
             <div id='conta-usuario'>
-              <a href="#"><img src='/assets/images/icon_config_cliente.png' alt='icone usuario'/></a>
+              <a href="/login"><img src='/assets/images/icon_config_cliente.png' alt='icone usuario'/></a>
 
               <p>Entrar na minha conta</p>
             </div>
@@ -163,9 +163,13 @@ export default function Home() {
           <Carrossel/>
         </section>
 
+        <div id='mais'>
+          <a href='#'><p>Mais produtos...</p></a>
+        </div>
+
         <section id='descricao'>
           <div>
-            <div className='circulo-selecao1'><div id='natural' onClick={colorNatural}>Natural<br/>mente</div></div>
+            <div className='circulo-selecao1'><div id='natural' onClick={colorNatural}>Natural<br/>Mente</div></div>
             <div className='circulo-selecao'><div id='equipe' onClick={colorEquipe}>Equipe</div></div>
             <div className='circulo-selecao'><div id='visao' onClick={colorVisao}>Visão</div></div>
             <div className='circulo-selecao'><div id='objetivo' onClick={colorObjetivo}>Objetivo</div></div>
@@ -179,15 +183,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer>
-        <div id='logo-rodape'>
-          <img src='/assets/images/logo192.png'/>
-        </div>
-
-        <div id='txt-rodape'>
-          <p>A NaturalMente  |  Produtos ▾  |  Lojas  |  Contato | Política de Privacidade </p>
-        </div>
-      </footer>
+    <Footer/>
     </div>
   );
 }

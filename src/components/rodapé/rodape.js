@@ -9,14 +9,14 @@ export default function Footer(){
 
                     <img src='/assets/images/logo192.png' />
 
-                    <Link to='/'>A NaturalMente</Link>
-                    <p>|</p>
-                    <Link to='/'>Produtos º</Link>
-                    <p>|</p>
-                    <Link to='/'>Lojas</Link>
-                    <p>|</p>
-                    <Link to='/'>Contato</Link>
-                    <p>|</p>
+                    <Link to='#'>A NaturalMente |</Link>
+                    
+                    <Link to='/distribuidora'>Distribuidora |</Link>
+                    
+                    <Link to='/TermoseCondicoes'>Termos e Condições |</Link>
+                    
+                    <Link to='/Contato'>Contato |</Link>
+                    
                     <Link to='/PrivacyPolicy'>Política de Privacidade</Link>
             </div>
 

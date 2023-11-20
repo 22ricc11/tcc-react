@@ -18,9 +18,14 @@
     .carousel-elements img {
         margin: 10px;
         height: 25vh;
+
+       img [ alt='two']{
+
+        }
     }
 
     .carousel-indicators {
         margin-bottom: -1rem;
     }
+
 }

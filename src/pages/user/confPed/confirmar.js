@@ -107,7 +107,7 @@ export default function ConfirmarPed(){
                 </div>
 
             </div>
-            <Footer/>
+
         </div>
 
     )

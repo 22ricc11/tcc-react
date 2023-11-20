@@ -23,7 +23,7 @@ function PrivacyPolicy() {
         conhecimento
         e consentimento. Também informamos por que estamos 
         coletando
-        e como será usado.+
+        e como será usado.
         Apenas retemos as informações coletadas pelo tempo
         necessário para fornecer o serviço solicitado. Quando 
         armazenamos dados,
@@ -47,8 +47,8 @@ function PrivacyPolicy() {
         aceitação de nossas práticas em torno de privacidade e
         informações pessoais.
         Se você tiver alguma dúvida sobre como lidamos com dados
-        do usuário e informações pessoais, entre em contacto
-        connosco.
+        do usuário e informações pessoais, entre em contato
+        conosco.
         </p>
 
         <h2>Dados de Coleta</h2>
