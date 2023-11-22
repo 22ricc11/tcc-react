@@ -1,0 +1,42 @@
+.cabecalhoP{
+    display: flex;
+    flex-direction: row;
+    background-color: #BAD68D;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+
+    img[alt='seta']{
+        margin: 20px;
+        width: 35px;
+        height: 35px;
+    }
+
+    form{
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        width: 25vw;
+        height: 4.5vh;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+
+        input{
+            border: none;
+            width: 20vw;
+            margin-left: 5px;
+            outline: 0;
+        }
+
+        img[alt='lupa']{
+            margin-top: 8px ;
+        }
+    }
+
+    img[alt='menu']{
+        margin: 20px;
+        width: 35px;
+        height: 35px;
+    }
+}

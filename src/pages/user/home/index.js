@@ -164,7 +164,7 @@ export default function Home() {
         </section>
 
         <div id='mais'>
-          <a href='#'><p>Mais produtos...</p></a>
+          <a href='/produtos'><p>Mais produtos...</p></a>
         </div>
 
         <section id='descricao'>

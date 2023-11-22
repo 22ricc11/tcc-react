@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import './cabUser.scss'
 
 export default function CabUser(){

@@ -1,11 +1,12 @@
-import './produtos.scss'
+import './infprodutos.scss'
 import Footer from '../../../components/rodapé/rodape'
 
 import 'react-toastify/dist/ReactToastify.css';
 import { toast, ToastContainer } from 'react-toastify';
+import CabProdutos from '../../../components/cabecalho/cabProdutos/cabProdutos';
 
 
-export default function Produtos(){
+export default function Infprodutos(){
 
     function sacola() {
         toast.dark('Adicionado a sacola');
@@ -14,19 +15,7 @@ export default function Produtos(){
     return(
         <div className='pag-infprodutos'>
             <ToastContainer/>
-            <div className='cabecalhoP'>
-                <img src='/assets/images/s-infProdutos.png' alt='seta' />
-
-                <form>
-                    
-                        <img src='/assets/images/lupa.png' alt='lupa' />
-                    
-                    <input type='text' placeholder='O que você procura hoje?' />
-                </form>
-
-                <img src='/assets/images/menu.png' alt='menu'/>
-            </div>
-
+            <CabProdutos/>
             <div className='meioP'>
                 
                     <h3>ARGILA VERDE USO FACIAL/CORPORAL/CAPILAR 70G</h3>
