@@ -12,33 +12,28 @@
         font-size: 30px;
     }
 
+    button{
+        border: none;
+        border-radius: 15px;
+        padding: 7px 15px;
+        background-color: #A2D65D;
+    }
+
 
     .a{
-        display: inline-flex;
+        display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
 
         div{
+            display: block;
             background-color: white;
             border-radius: 7px;
             margin: 8px;
             text-align: center;
             width: 20vw;
-            height: 210px;
-
-            .info-hover{
-                display: none;
-                background: white;
-                padding: 10px;
-                border: 1px solid #ccc;
-                width: 100%;
-                z-index: 1;
-
-                .info-hover:hover{
-                    display: block;
-                }
-        }
+            height: 270px;
 
             p{
                 font-size: 15px;
@@ -64,6 +59,7 @@
             margin: 8px;
             text-align: center;
             width: 20vw;
+            height: 270px;
 
 
             p{

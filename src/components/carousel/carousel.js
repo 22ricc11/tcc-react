@@ -17,11 +17,11 @@ export default function Carrossel() {
                             alt="Image One"
                         />
 
-                        <a href='/infproduto'><img
+                        <img
                             className='d-block w-20'
                             src="/assets/images/image_produto_2.png"
                             alt="Image Two"
-                        /></a>
+                        />
 
                         <img
                             className='d-block w-20'

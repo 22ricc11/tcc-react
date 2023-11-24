@@ -3,7 +3,7 @@ import './cabProdutos.scss'
 export default function CabProdutos(){
     return(
         <div className='cabecalhoP'>
-            <img src='/assets/images/s-infProdutos.png' alt='seta' />
+            <a href='/'><img src='/assets/images/s-infProdutos.png' alt='seta' /></a>
 
             <form>
                 <img src='/assets/images/lupa.png' alt='lupa' />

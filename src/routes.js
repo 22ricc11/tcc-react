@@ -16,8 +16,8 @@ import Login from './pages/user/login/login';
 import Cadastro from './pages/user/cadastro/cad';
 import Endereco from './pages/user/endereço/endereco';
 import ConfPed from './pages/user/confPed/confirmar';
-import InfProdutos from './pages/user/infProdutos/infprodutos';
 import Produtos from './pages/user/produto/produtos';
+import Carrinho from './pages/user/carrinho/carrinho'
 
 
 //ADM
@@ -44,8 +44,8 @@ export default function Index(){
                 <Route path='/cadastro' element={<Cadastro/>} />
                 <Route path='/endereco' element={<Endereco/>} />
                 <Route path='/confirmarpedido' element={<ConfPed/>} />
-                <Route path='/infproduto' element={<InfProdutos/>} />
                 <Route path='/produtos' element={<Produtos/>}/>   
+                <Route path='/carrinho' element={<Carrinho/>}/>   
 
                 //ADM
                 <Route path='/adm' element={<Logar/>} />
