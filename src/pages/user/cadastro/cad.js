@@ -13,9 +13,15 @@ export default function Cad(){
             <div className='dentro'>
                 <img id='img' src='/assets/images/login.png' alt=''/>
 
-                <Link to='/'><img id='sobre' src='/assets/images/seta.png' alt=''/></Link>
+                <div id='sobre'>
+                    <Link to='/'><img src='/assets/images/seta.png' alt=''/></Link>
+                </div> 
+                
+                <div className='bt'>
+                    <Link to='/login'>Login</Link>
+                </div>
+                
                 <div className='coisas'>
-                    <Link id='bt' to='/login'>Login</Link>
 
                     <div className='cadastro'>
                         <h1>Criar <br/>Conta</h1>

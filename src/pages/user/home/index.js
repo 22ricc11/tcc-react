@@ -102,13 +102,13 @@ export default function Home() {
             <div id='conta-usuario'>
               <a href="/login"><img src='/assets/images/icon_config_cliente.png' alt='icone usuario'/></a>
 
-              <p>Entrar na minha conta</p>
+              <a href='/login'><p>Entrar na minha conta</p></a>
             </div>
 
             <div id='carrinho'>
-              <a href="#"><img src='/assets/images/icon_carrinho.png' alt='icone carrinho'/></a>
-
-              <p>Sacola</p>
+              <a href="/carrinho"><img src='/assets/images/icon_carrinho.png' alt='icone carrinho'/></a>
+              <span className='status'>1</span>
+              <a href='/carrinho'><p>Carrinho</p></a>
             </div>
           </div>
         </nav>

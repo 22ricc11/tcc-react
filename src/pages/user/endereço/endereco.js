@@ -24,12 +24,12 @@ export default function Endereco(){
                 </div>
 
                 <div className='c'>
-                    <input type='text' value={cep} placeholder='Cep' onChange={e=> setCep(e.target.value)}/>        
-                    <input type='text' value={estado} placeholder='Estado' onChange={e=> setEstado(e.target.value)}/>
-                    <input type='text' value={cidade} placeholder='Cidade' onChange={e=> setCidade(e.target.value)}/>
-                    <input type='text' value={ruavenida} placeholder='Rua/Avenida' onChange={e=> setRuavenida(e.target.value)}/>
-                    <input type='text' value={numero} placeholder='Número da residência' onChange={e=> setNumero(e.target.value)}/>
-                    <input type='text' value={complemento} placeholder='Complemento (apto, bloco, etc)' onChange={e=> setComplemento(e.target.value)}/>
+                    <input type='text' value={cep} placeholder='Cep' onChange={e=> setCep(e.target.value)} required/>        
+                    <input type='text' value={estado} placeholder='Estado' onChange={e=> setEstado(e.target.value)} required/>
+                    <input type='text' value={cidade} placeholder='Cidade' onChange={e=> setCidade(e.target.value)} required/>
+                    <input type='text' value={ruavenida} placeholder='Rua/Avenida' onChange={e=> setRuavenida(e.target.value)} required/>
+                    <input type='text' value={numero} placeholder='Número da residência' onChange={e=> setNumero(e.target.value)} required/>
+                    <input type='text' value={complemento} placeholder='Complemento (apto, bloco, etc)' onChange={e=> setComplemento(e.target.value)} required/>
                 </div>
 
                 <Link to=''><button>salvar</button></Link>

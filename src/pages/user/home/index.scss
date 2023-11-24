@@ -28,8 +28,8 @@
     }
 
     #logo img{
-        width: 135px;
-        height: 135px;
+        width: 9vw;
+        height: 13vh;
     }
 
     form {
@@ -70,8 +70,9 @@
 
     #navegacao-basica {
         display: flex;
-        align-items: center;
         justify-content: space-evenly;
+        align-items: center;
+
     }
 
     #navegacao-basica img {
@@ -99,19 +100,46 @@
 
     }
 
-    #conta-usuario p{
-        text-align: center;
-        margin-top: 5px;
-        width: 8vw;
+    #conta-usuario{
+        p{
+            text-align: center;
+            margin-top: 5px;
+            font-size: 15px;
+            width: 8vw;
+            text-decoration: none;
+        }
+
+        a{
+            text-decoration: none;
+        }
+        
     }
 
     #carrinho {
         padding-bottom: 17px;
-    }
-
-    #carrinho p {
+        position: relative;
+        
+        a{
         text-align: center;
         margin-top: 5px;
+        text-decoration: none;
+        }
+
+        .status{
+            background-color: red;
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            top: 0;
+            left: 45px;
+            color: white;
+            font-size: 11px;
+            font-weight: 600;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     }
 
     /////////
@@ -212,7 +240,7 @@
     }
 
     #txt-alternativo {
-        font-size: 1.7em;
+        font-size: 25px;
         text-align: start;
         align-content: flex-start;
         padding: 5px;

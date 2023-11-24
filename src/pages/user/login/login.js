@@ -19,10 +19,11 @@ export default function Login(){
                 
 
                 
+                <div className='bt'>
+                    <Link to='/cadastro'>Cadastro</Link>
+                </div>
 
                 <div className='coisas'>
-
-                    <Link id='BT' to='/cadastro'>Cadastro</Link>
 
                     <div className='Login'>
                         <h1>Login</h1>
@@ -30,8 +31,10 @@ export default function Login(){
  
                         <div id='in'>
                             <input type="text" value={email} placeholder='E-mail' onChange={e=> setEmail(e.target.value)} />
-                            <input type={senhaV ? 'text' : 'password'} value={senha} placeholder='Senha' onChange={e=> setSenha(e.target.value)} />
-                            <button onClick={toggleVisibilidadeSenha}> {senhaV ? <img src='/assets/images/olhoA.png' alt=''/> : <img src='/assets/images/olhoF.png' alt=''/> }</button>
+                            <div>
+                                <input type={senhaV ? 'text' : 'password'} value={senha} placeholder='Senha' onChange={e=> setSenha(e.target.value)} />
+                                <button onClick={toggleVisibilidadeSenha}> {senhaV ? <img src='/assets/images/olhoA.png' alt=''/> : <img src='/assets/images/olhoF.png' alt=''/> }</button>
+                            </div>
                         </div>
                         
                     <h4>Entrar com:</h4>
