@@ -1,18 +1,44 @@
 .pag-produtos{
     display: flex;
     flex-direction: column;
+    background-color: #F5F5F5;
+
+    h1{
+        color: #000;
+    }
+
+    #p{
+        color: #f60707;
+        font-size: 30px;
+    }
+
 
     .a{
-        display: flex;
-
-        text-align: center;
+        display: inline-flex;
+        justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
 
         div{
-            width: 100vw;
-            height: 30vh;
-            background-color: aqua;
+            background-color: white;
+            border-radius: 7px;
             margin: 8px;
+            text-align: center;
+            width: 20vw;
+            height: 210px;
+
+            .info-hover{
+                display: none;
+                background: white;
+                padding: 10px;
+                border: 1px solid #ccc;
+                width: 100%;
+                z-index: 1;
+
+                .info-hover:hover{
+                    display: block;
+                }
+        }
 
             p{
                 font-size: 15px;
@@ -21,8 +47,35 @@
 
             img{
                 width: 150px;
+                height: 100px;
             }
         }
-}
+    }
+
+    .b{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        div{
+            background-color: white;
+            border-radius: 7px;
+            margin: 8px;
+            text-align: center;
+            width: 20vw;
+
+
+            p{
+                font-size: 15px;
+                color: #000;
+            }
+
+            img{
+                width: 150px;
+                height: 100px;
+            }
+        }
+    }
 
 }
